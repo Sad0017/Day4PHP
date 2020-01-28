@@ -11,15 +11,13 @@ $adresse = $_POST["adresse"] ?? '';
 $city = $_POST["city"] ?? '';
 $postcode = $_POST["postcode"] ?? '';
 
-if(empty($_POST['prenom'])){
-    echo "<script> alert('Veuillez entrer votre prénom')</script>";
-}
+
 
 
 echo "
 <table>
   <tr>
-    <td colspan='2'> Vos informations</td>
+    <td colspan='2' id='titre'> Vos informations</td>
   </tr>
   <tr>
     <td>Prénom </td>
@@ -45,9 +43,15 @@ echo "
     <td>Code postale </td>
     <td> $postcode </td>
   </tr>
+  <tr >
+    <td colspan='2' id='retour' ><a  href=\"index.php\"> Retour </a></td>
+</tr>
 </table>
+
   ";
 
 
 
 ?>
+
+

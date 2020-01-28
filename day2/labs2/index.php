@@ -2,11 +2,13 @@
 <head>
     <title>PHP Test</title>
     <link rel="stylesheet" href="styletheo.css">
+    <script src="alerte.js"></script>
+
 </head>
 <body>
 
 
-<form class="box" action="alerte.php" method="post">
+<form class="box" action="alerte.php" method="post" name="infos" onsubmit="return checkforminputs()">
     <h1>Vos informations :</h1>
     <input type="input" name="prenom" placeholder="Prénom">
     <input type="input" name="nom" placeholder="Nom">

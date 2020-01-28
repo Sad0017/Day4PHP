@@ -19,7 +19,7 @@ if(empty($_POST['prenom'])){
 echo "
 <table>
   <tr>
-    <td colspan='2'> Vos informations</td>
+    <td colspan='2' id='titre'> Vos informations</td>
   </tr>
   <tr>
     <td>Prénom </td>
